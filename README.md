@@ -1,3 +1,14 @@
+# WHAT I ADDED:
+# Creating the Docker container
+
+```
+docker build .
+docker images # this is just for you to find the docker image id
+docker run -it -d -p 8888:8888 <docker-image>
+```
+
+# ORIGINAL DOCUMENTATION
+-----------------------------------------------------------------------------------------
 # ![](docs/img/logo_sm.png) Visual Analysis for State Changes in RNNs
 
 More information about LSTMVis, an introduction video, and the link to the live demo can be found at **[lstm.seas.harvard.edu](http://lstm.seas.harvard.edu)**
