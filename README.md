@@ -1,5 +1,10 @@
 # WHAT I ADDED:
-# Creating the Docker container
+
+
+## Extracting Data for LSTMVis
+Data from Edo's model has a filename format of: ```LSTM_all_activations.csv```. To perform the extraction, move that file to ```data/extracting_edos_data/```. Run the file named ```run_me.py```. It's result includes a couple of .csv files (which you just ignore) and files named: states.hdf5, train.dict, and train.hdf5. RUN THE SCRIPT WHILE INSIDE OF THE FOLDER FOR THIS TO WORK. Take those files and move them up one directory. That's all you need to do. Once you've done this, then you can create the Docker container. If you want to modify the data, you have to create a new Docker image for the changes to be picked up. 
+
+## Creating the Docker container
 
 ```
 docker build .
